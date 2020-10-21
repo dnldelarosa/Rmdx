@@ -52,9 +52,6 @@ output:
       in_header: "rmdx/preamble.tex"
     latex_engine: xelatex
     
-params:
-  exclude_r_in: c('docx')
-    
 toc-title: 'Tabla de contenido'
 fig_caption: true
 always_allow_html: true

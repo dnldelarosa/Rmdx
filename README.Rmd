@@ -1,0 +1,27 @@
+---
+title: "RMarkdown-X"
+author: "Daniel E. de la Rosa"
+date: "10/21/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# TODO
+
+- HTML format
+
+- DOCX format
+
+- PDF format
+
+- `exclude_r_in` to params
+
+- `knit function` to package functions
+
+- `extra_functions` to package functions
+
+- `author name` to footer credicts.
+
