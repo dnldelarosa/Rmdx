@@ -4,20 +4,6 @@ subtitle: 'Subtítulo del documento'
 author: "Daniel E. de la Rosa"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
-  bookdown::html_document2: 
-    toc: true
-    number_sections: true
-    css: ['rmdx/custom_css.css', 'rmdx/current_project.css']
-    highlight: 'pygments'
-    includes:
-      after_body: ['rmdx/footer.html', 'rmdx/js_scripts.html']
-  html_notebook:
-    toc: true
-    number_sections: true
-    css: ['rmdx/custom_css.css', 'rmdx/current_project.css']
-    highlight: 'pygments'
-    includes:
-      after_body: ['rmdx/footer.html', 'rmdx/js_scripts.html']
   officedown::rdocx_document:
     toc: true
     highlight: 'pygments'
@@ -49,6 +35,17 @@ output:
     mapstyles:
       Normal: ['First Paragraph', 'Author', 'Date']
     reference_num: true
+  html_notebook:
+    toc: true
+    number_sections: true
+    highlight: 'pygments'
+  bookdown::html_document2: 
+    toc: true
+    number_sections: true
+    css: ['rmdx/custom_css.css', 'rmdx/current_project.css']
+    highlight: 'pygments'
+    includes:
+      after_body: ['rmdx/footer.html', 'rmdx/js_scripts.html']
   bookdown::pdf_document2:
     toc: true
     includes:
@@ -67,23 +64,15 @@ knit: (
         function(inputFile, encoding) { 
           rmarkdown::render( 
             input         = inputFile,
-            output_format = c(
-            "bookdown::html_document2",
-            "officedown::rdocx_document",
-            "bookdown::pdf_document2"),
-            encoding      = encoding, 
-            output_yaml = 'rmdx/output.yml',
-            output_file   = c(
-            'Html document',
-            'Word document',
-            'PDF document')
+            output_format = 'all',
+            encoding      = encoding
           ) 
         }
       )
 ---
 
 ```{r setup, include=FALSE}
-exclude_chunks_in <- c('docx')
+exclude_r_in <- c('docx')
 source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
 ```
 
@@ -91,8 +80,6 @@ source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
 ```{r}
 library(ggplot2)
 ```
-
-
 
 
 

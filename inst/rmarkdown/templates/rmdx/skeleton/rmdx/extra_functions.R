@@ -8,11 +8,6 @@ library(magrittr)
 library(htmltools)
 
 
-knitr::opts_chunk$set(
-  echo = incluir_condicional(),
-  message = incluir_condicional(),
-  comment = "",
-  fig.align = 'center')
 
 formato <- ifelse(
   is.null(knitr::opts_knit$get("rmarkdown.pandoc.to")[[1]]),
@@ -22,12 +17,12 @@ formato <- ifelse(
 
 include_conditional <- function(texto = NA_character_, header=1){
   if(is.na(texto)){
-    if(formato %in% params$exclude_r_in){
+    if(formato %in% exclude_r_in){
       FALSE
     } else {
       TRUE
     }
-  } else if(!(formato %in% params$exclude_r_in)) {
+  } else if(!(formato %in% exclude_r_in)) {
     paste0(rep('#', header), ' ', texto)
   }
 }
@@ -64,3 +59,9 @@ html_widget <- function(hw, name){
     hw
   }
 }
+
+knitr::opts_chunk$set(
+  echo = include_conditional(),
+  message = include_conditional(),
+  comment = "",
+  fig.align = 'center')
