@@ -1,0 +1,101 @@
+---
+title: "Este es el título principal del documento"
+subtitle: 'Subtítulo del documento'
+author: "Daniel E. de la Rosa"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  bookdown::html_document2: 
+    toc: true
+    number_sections: true
+    css: ['rmdx/custom_css.css', 'rmdx/current_project.css']
+    highlight: 'pygments'
+    includes:
+      after_body: ['rmdx/footer.html', 'rmdx/js_scripts.html']
+  html_notebook:
+    toc: true
+    number_sections: true
+    css: ['rmdx/custom_css.css', 'rmdx/current_project.css']
+    highlight: 'pygments'
+    includes:
+      after_body: ['rmdx/footer.html', 'rmdx/js_scripts.html']
+  officedown::rdocx_document:
+    toc: true
+    highlight: 'pygments'
+    reference_docx: rmdx/base.docx
+    tables:
+      style: Table
+      layout: autofit
+      width: 1.0
+      caption:
+        pre: 'Table '
+        sep: ': '
+      conditional:
+        first_row: true
+        first_column: false
+        last_row: false
+        last_column: false
+        no_hband: false
+        no_vband: true
+    plots:
+      style: Normal
+      align: center
+      caption:
+        style: Image Caption
+        pre: 'Gráfico '
+        sep: ': '
+    lists:
+      ol.style: null
+      ul.style: null
+    mapstyles:
+      Normal: ['First Paragraph', 'Author', 'Date']
+    reference_num: true
+  bookdown::pdf_document2:
+    toc: true
+    includes:
+      in_header: "rmdx/preamble.tex"
+    latex_engine: xelatex
+    
+params:
+  exclude_r_in: c('docx')
+    
+toc-title: 'Tabla de contenido'
+fig_caption: true
+always_allow_html: true
+bibliography: 'rmdx/bibliography.bib' 
+nocite: '@*' 
+knit: (
+        function(inputFile, encoding) { 
+          rmarkdown::render( 
+            input         = inputFile,
+            output_format = c(
+            "bookdown::html_document2",
+            "officedown::rdocx_document",
+            "bookdown::pdf_document2"),
+            encoding      = encoding, 
+            output_yaml = 'rmdx/output.yml',
+            output_file   = c(
+            'Html document',
+            'Word document',
+            'PDF document')
+          ) 
+        }
+      )
+---
+
+```{r setup, include=FALSE}
+exclude_chunks_in <- c('docx')
+source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
+```
+
+`r include_conditional('Librerías')`
+```{r}
+library(ggplot2)
+```
+
+
+
+
+
+
+
+# Referencias
