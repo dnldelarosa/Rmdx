@@ -1,7 +1,5 @@
-RMarkdown-X
+RMarkdown-X: Different RMarkdown formats for different purposes
 ================
-Daniel E. de la Rosa
-10/21/2020
 
 # TODO
 
@@ -19,4 +17,8 @@ Daniel E. de la Rosa
 
   - `author name` to footer credicts.
 
+  - `tableD` -\> `rmdxTable`
+
 <!-- Se puede hacer que el html del footer se genere dinámicamente en cada corrida y se guarde en un archivo temporal. De esa forma el nombre para los créditos se pasa como un argumento a la función generadora de los formatos html. -->
+
+<!-- Es importante observar que todo el código del proyecto debe ser compatible con los formatos que quieras utilizar. -->
