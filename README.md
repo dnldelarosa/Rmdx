@@ -58,6 +58,6 @@ devtools::install_github("drdsdaniel/Rmdx")
   - Use `knitr::is.latex, knitr::is.html` and others in `formato`
     function
 
-  - html format with toc in lateral
+  - html format with toc in lateral.
 
 <!-- Es importante observar que todo el código del proyecto debe ser compatible con los formatos que quieras utilizar. -->
