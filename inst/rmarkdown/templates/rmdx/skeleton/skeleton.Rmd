@@ -73,7 +73,7 @@ exclude_r_in <- c('docx')
 source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
 ```
 
-`r include_conditional('Librerías')`
+`r include_conditional('Librerías {-}')`
 ```{r}
 library(ggplot2)
 ```
@@ -82,4 +82,4 @@ library(ggplot2)
 
 
 
-# Referencias
+# Referencias {-}
