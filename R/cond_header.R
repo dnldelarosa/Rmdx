@@ -9,7 +9,6 @@
 #' @return character Conditional Markdown header of the given level
 #' @export
 #'
-#' @examples
 cond_header <- function(cond_value, text = ' ', hlevel = 1){
   if(cond_value) {
     paste0(rep('#', hlevel), ' ', text)

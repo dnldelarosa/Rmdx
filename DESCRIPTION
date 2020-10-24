@@ -1,7 +1,7 @@
 Package: Rmdx
 Type: Package
 Title: What the Package Does (Title Case)
-Version: 0.0.1.9000
+Version: 0.1.0.9000
 Authors@R: person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
@@ -17,4 +17,12 @@ RoxygenNote: 7.1.1
 URL: https://github.com/drdsdaniel/Rmdx
 BugReports: https://github.com/drdsdaniel/Rmdx/issues
 Imports: 
-    knitr
+    rmarkdown,
+    knitr,
+    bookdown,
+    flextable,
+    DT,
+    magrittr,
+    officer,
+    officedown,
+    kableExtra

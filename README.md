@@ -51,11 +51,7 @@ devtools::install_github("drdsdaniel/Rmdx")
 
 <!-- Se puede hacer que el html del footer se genere dinámicamente en cada corrida y se guarde en un archivo temporal. De esa forma el nombre para los créditos se pasa como un argumento a la función generadora de los formatos html. -->
 
-  - `tableD` -\> `rmdxTable`
-
-  - `include_conditional(,header=1)` -\> `indlude_conditional(,level=0)`
-
-<!-- Level 0 para incluir texto normal en el documento de manera condicional. -->
+  - `tableD` -\> `cond_table`
 
   - html format with toc in lateral.
 

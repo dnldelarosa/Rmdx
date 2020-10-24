@@ -63,19 +63,13 @@ always_allow_html: true
 bibliography: 'rmdx/bibliography.bib' 
 nocite: '@*' 
 knit: (
-        function(inputFile, encoding) { 
-          rmarkdown::render( 
-            input         = inputFile,
-            output_format = 'all',
-            encoding      = encoding
-          ) 
-        }
+        
       )
 ---
 
 ```{r setup, include=FALSE}
+library(Rmdx)
 cond_value <- Rmdx::cond_val(list(docx = params$docx, latex = params$latex, html = params$html))
-source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
 knitr::opts_chunk$set(echo = cond_value, message = cond_value, comment = "", fig.align = 'center')
 ```
 
@@ -84,24 +78,15 @@ knitr::opts_chunk$set(echo = cond_value, message = cond_value, comment = "", fig
 library(ggplot2)
 ```
 
-<!-- ```{r} -->
-<!-- formato <- function(){'html'} -->
-<!-- cond_val <- function(exclude_r_in) { -->
-<!--   if(!exclude_r_in$docx & formato() == 'docx'){ -->
-<!--     FALSE -->
-<!--   } else if(!exclude_r_in$latex & formato() == 'latex'){ -->
-<!--     FALSE -->
-<!--   }  else if(!exclude_r_in$html & formato() == 'html'){ -->
-<!--     FALSE -->
-<!--   } else { -->
-<!--     TRUE -->
-<!--   } -->
-<!-- } -->
-<!-- cond_val(list(docx = params$docx, latex = params$latex, html = params$html)) -->
-<!-- ``` -->
-
-
-
+# Plotting
+```{r}
+qplot(cars$speed)
+```
+ 
+# Tables
+```{r}
+cond_table(cars)
+```
 
 
 # Referencias {-}
