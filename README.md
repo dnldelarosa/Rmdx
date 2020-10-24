@@ -7,6 +7,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis-ci.com/drdsdaniel/Rmdx)
 <!-- badges: end -->
 
 The goal of Rmdx is to …
