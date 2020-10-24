@@ -51,7 +51,12 @@ output:
     includes:
       in_header: "rmdx/preamble.tex"
     latex_engine: xelatex
-    
+
+params:
+  html: TRUE
+  docx: FALSE
+  latex: FALSE
+
 toc-title: 'Tabla de contenido'
 fig_caption: true
 always_allow_html: true
@@ -69,14 +74,31 @@ knit: (
 ---
 
 ```{r setup, include=FALSE}
-exclude_r_in <- c('docx')
+cond_value <- Rmdx::cond_val(list(docx = params$docx, latex = params$latex, html = params$html))
 source("rmdx/extra_functions.R", local = TRUE, echo=FALSE)
+knitr::opts_chunk$set(echo = cond_value, message = cond_value, comment = "", fig.align = 'center')
 ```
 
-`r include_conditional('Librerías {-}')`
+`r cond_header(cond_value, 'Librerías {-}')`
 ```{r}
 library(ggplot2)
 ```
+
+<!-- ```{r} -->
+<!-- formato <- function(){'html'} -->
+<!-- cond_val <- function(exclude_r_in) { -->
+<!--   if(!exclude_r_in$docx & formato() == 'docx'){ -->
+<!--     FALSE -->
+<!--   } else if(!exclude_r_in$latex & formato() == 'latex'){ -->
+<!--     FALSE -->
+<!--   }  else if(!exclude_r_in$html & formato() == 'html'){ -->
+<!--     FALSE -->
+<!--   } else { -->
+<!--     TRUE -->
+<!--   } -->
+<!-- } -->
+<!-- cond_val(list(docx = params$docx, latex = params$latex, html = params$html)) -->
+<!-- ``` -->
 
 
 
