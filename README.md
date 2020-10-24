@@ -11,6 +11,8 @@
 status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis-ci.com/drdsdaniel/Rmdx)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/drdsdaniel/Rmdx?branch=master&svg=true)](https://ci.appveyor.com/project/drdsdaniel/Rmdx)
+[![Codecov test
+coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/master/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=master)
 <!-- badges: end -->
 
 The goal of Rmdx is to …

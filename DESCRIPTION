@@ -26,3 +26,5 @@ Imports:
     officer,
     officedown,
     kableExtra
+Suggests: 
+    covr
