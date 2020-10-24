@@ -7,3 +7,4 @@
 ^inst/rmarkdown/templates/rmdx/skeleton/skeleton\.html$
 ^inst/rmarkdown/templates/rmdx/skeleton/skeleton\.log$
 ^\.travis\.yml$
+^appveyor\.yml$

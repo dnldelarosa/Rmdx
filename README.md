@@ -9,6 +9,8 @@
 
 [![Travis build
 status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis-ci.com/drdsdaniel/Rmdx)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/drdsdaniel/Rmdx?branch=master&svg=true)](https://ci.appveyor.com/project/drdsdaniel/Rmdx)
 <!-- badges: end -->
 
 The goal of Rmdx is to …
