@@ -40,6 +40,8 @@ devtools::install_github("drdsdaniel/Rmdx")
   - PDF format
 
   - `exclude_r_in` to params
+    <!-- Necesito hacer que las funciones puedan acceder a los parámetros. -->
+    <!-- https://community.rstudio.com/t/how-to-solve-no-visible-binding-for-global-variable-note/28887 -->
 
   - `knit function` to package functions
 
@@ -54,9 +56,6 @@ devtools::install_github("drdsdaniel/Rmdx")
   - `include_conditional(,header=1)` -\> `indlude_conditional(,level=0)`
 
 <!-- Level 0 para incluir texto normal en el documento de manera condicional. -->
-
-  - Use `knitr::is.latex, knitr::is.html` and others in `formato`
-    function
 
   - html format with toc in lateral.
 

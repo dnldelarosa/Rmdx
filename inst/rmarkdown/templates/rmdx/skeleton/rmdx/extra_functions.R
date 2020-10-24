@@ -16,11 +16,11 @@ library(Rmdx)
 #   knitr::opts_knit$get("rmarkdown.pandoc.to")[[1]]
 #   )
 
-include_conditional <- function(texto = NA_character_, header=1){
- if(cond_val(exclude_r_in)) {
-    paste0(rep('#', header), ' ', texto)
-  }
-}
+# include_conditional <- function(texto = NA_character_, header=1){
+#  if(cond_val(exclude_r_in)) {
+#     paste0(rep('#', header), ' ', texto)
+#   }
+# }
 
 
 tableD <- function(df, caption = " "){
