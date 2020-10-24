@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# Rmdx <img src='man/figures/logo.png' align="right" height="139" />
+
 # Rmdx: Different RMarkdown formats for different purposes
 
 <!-- badges: start -->
