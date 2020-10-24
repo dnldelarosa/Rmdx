@@ -25,6 +25,8 @@ Imports:
     magrittr,
     officer,
     officedown,
-    kableExtra
+    kableExtra,
+    lifecycle
 Suggests: 
     covr
+RdMacros: lifecycle

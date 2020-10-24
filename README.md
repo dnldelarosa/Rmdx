@@ -13,6 +13,8 @@ status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis
 status](https://ci.appveyor.com/api/projects/status/github/drdsdaniel/Rmdx?branch=master&svg=true)](https://ci.appveyor.com/project/drdsdaniel/Rmdx)
 [![Codecov test
 coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/master/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=master)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The goal of Rmdx is to …
