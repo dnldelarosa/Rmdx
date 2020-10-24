@@ -62,9 +62,7 @@ fig_caption: true
 always_allow_html: true
 bibliography: 'rmdx/bibliography.bib' 
 nocite: '@*' 
-knit: (
-        
-      )
+knit: Rmdx::cond_knit
 ---
 
 ```{r setup, include=FALSE}

@@ -43,15 +43,9 @@ devtools::install_github("drdsdaniel/Rmdx")
     <!-- Necesito hacer que las funciones puedan acceder a los parámetros. -->
     <!-- https://community.rstudio.com/t/how-to-solve-no-visible-binding-for-global-variable-note/28887 -->
 
-  - `knit function` to package functions
-
-  - `extra_functions` to package functions
-
   - `author name` to footer credicts.
 
 <!-- Se puede hacer que el html del footer se genere dinámicamente en cada corrida y se guarde en un archivo temporal. De esa forma el nombre para los créditos se pasa como un argumento a la función generadora de los formatos html. -->
-
-  - `tableD` -\> `cond_table`
 
   - html format with toc in lateral.
 
