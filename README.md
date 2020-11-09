@@ -3,8 +3,6 @@
 
 # Rmdx <img src='man/figures/logo.png' align="right" height="139" />
 
-# Rmdx: Different RMarkdown formats for different purposes
-
 <!-- badges: start -->
 
 [![Travis build
@@ -47,20 +45,10 @@ devtools::install_github("drdsdaniel/Rmdx")
 
   - DOCX format
 
-  - PDF format
-
-  - `exclude_r_in` to params
-    <!-- Necesito hacer que las funciones puedan acceder a los parámetros. -->
-    <!-- https://community.rstudio.com/t/how-to-solve-no-visible-binding-for-global-variable-note/28887 -->
-
   - `author name` to footer credicts.
 
 <!-- Se puede hacer que el html del footer se genere dinámicamente en cada corrida y se guarde en un archivo temporal. De esa forma el nombre para los créditos se pasa como un argumento a la función generadora de los formatos html. -->
 
-  - `cond_text` function
-
   - html format with toc in lateral.
 
   - add spanish language suport for tables and figures labels
-
-<!-- Es importante observar que todo el código del proyecto debe ser compatible con los formatos que quieras utilizar. -->
