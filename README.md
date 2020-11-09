@@ -5,14 +5,16 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/drdsdaniel/Rmdx/workflows/R-CMD-check/badge.svg)](https://github.com/drdsdaniel/Rmdx/actions)
 [![Travis build
 status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis-ci.com/drdsdaniel/Rmdx)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/drdsdaniel/Rmdx?branch=master&svg=true)](https://ci.appveyor.com/project/drdsdaniel/Rmdx)
 [![Codecov test
 coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/master/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=master)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/package=Rmdx)
 <!-- badges: end -->
 
 The goal of Rmdx is to …
@@ -41,13 +43,7 @@ devtools::install_github("drdsdaniel/Rmdx")
 
 ## TODO
 
-  - HTML format
-
   - DOCX format
-
-  - `author name` to footer credicts.
-
-<!-- Se puede hacer que el html del footer se genere dinámicamente en cada corrida y se guarde en un archivo temporal. De esa forma el nombre para los créditos se pasa como un argumento a la función generadora de los formatos html. -->
 
   - html format with toc in lateral.
 
