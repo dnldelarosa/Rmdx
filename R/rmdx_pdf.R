@@ -1,5 +1,7 @@
 #' Rmdx PDF document format
 #'
+#' \lifecycle{maturing}
+#'
 #' This format is based in \code{\link[bookdown]{pdf_document2}}.
 #'
 #' @param toc logical See \code{\link[rmarkdown]{pdf_document}}

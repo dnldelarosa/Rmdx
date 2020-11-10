@@ -1,0 +1,25 @@
+---
+title: "Template Title"
+author: "Daniel E. de la Rosa"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: Rmdx::rmdx_docx
+
+toc-title: 'Contents'
+fig_caption: true
+always_allow_html: true
+bibliography: 'bibliography.bib' 
+nocite: '@*' 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
+
+
+# Bibliography {-}

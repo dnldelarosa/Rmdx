@@ -22,11 +22,17 @@ rmdx_html(
 
 \item{footer_name}{character author name to be included in footer}
 
-\item{footer_copy}{character much be 'left' or 'rigth'}
+\item{footer_copy}{character much be 'left' or 'right'}
 
 \item{...}{arguments to be passed to \code{\link[bookdown]{html_document2}}}
 }
+\value{
+An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}
+}
 \description{
+\lifecycle{maturing}
+}
+\details{
 This format is based in \code{\link[bookdown]{html_document2}}.
 }
 \examples{

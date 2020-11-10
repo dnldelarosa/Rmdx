@@ -1,5 +1,7 @@
 #' Rmdx HTML document format
 #'
+#' \lifecycle{maturing}
+#'
 #'  This format is based in \code{\link[bookdown]{html_document2}}.
 #'
 #' @param toc logical See \code{\link[rmarkdown]{html_document}}

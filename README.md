@@ -12,7 +12,7 @@ status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis
 [![Codecov test
 coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/master/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=master)
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/package=Rmdx)
 <!-- badges: end -->
@@ -43,7 +43,7 @@ devtools::install_github("drdsdaniel/Rmdx")
 
 ## TODO
 
-  - DOCX format
+<!-- https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R -->
 
   - html format with toc in lateral.
 

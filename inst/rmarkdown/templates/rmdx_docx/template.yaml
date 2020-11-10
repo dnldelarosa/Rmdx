@@ -1,4 +1,4 @@
-name: Rmdx
+name: rmdx_docx
 description: >
    A description of the template
-create_dir: TRUE
+create_dir: FALSE

@@ -1,14 +1,13 @@
 Package: Rmdx
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.3.0.9000
+Title: RMarkdown extra formats
+Version: 0.4.0.9000
 Authors@R: person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
            email = "drdsdaniel@gmail.com")
 Maintainer: Daniel E. de la Rosa <drdsdaniel@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package contains extra formats for RMarkdown.
 License: GPL
 Encoding: UTF-8
 LazyData: true
@@ -19,5 +18,6 @@ BugReports: https://github.com/drdsdaniel/Rmdx/issues
 Imports:
     lifecycle,
     bookdown,
-    rmarkdown
+    rmarkdown,
+    officedown
 RdMacros: lifecycle
