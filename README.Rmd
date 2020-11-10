@@ -43,7 +43,14 @@ devtools::install_github("drdsdaniel/Rmdx")
 ```
 ## Example
 
-\TODO
+### rmdx_html
+<img src='man/figures/html.png'/>
+
+### rmdx_pdf
+<img src='man/figures/pdf.png'/>
+
+### rmdx_docx
+<img src='man/figures/docx.png'/>
 
 ## TODO
 

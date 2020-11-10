@@ -41,6 +41,18 @@ devtools::install_github("drdsdaniel/Rmdx")
 
 ## Example
 
+### rmdx\_html
+
+<img src='man/figures/html.png'/>
+
+### rmdx\_pdf
+
+<img src='man/figures/pdf.png'/>
+
+### rmdx\_docx
+
+<img src='man/figures/docx.png'/>
+
 ## TODO
 
 <!-- https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R -->
