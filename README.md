@@ -8,9 +8,9 @@
 [![R build
 status](https://github.com/drdsdaniel/Rmdx/workflows/R-CMD-check/badge.svg)](https://github.com/drdsdaniel/Rmdx/actions)
 [![Travis build
-status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=master)](https://travis-ci.com/drdsdaniel/Rmdx)
+status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=main)](https://travis-ci.com/drdsdaniel/Rmdx)
 [![Codecov test
-coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/master/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=master)
+coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/main/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=main)
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN
