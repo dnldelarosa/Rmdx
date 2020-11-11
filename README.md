@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Rmdx <img src='man/figures/logo.png' align="right" height="139" />
+# Rmdx: RMarkdwon extra formats <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 
