@@ -12,10 +12,12 @@
 #'
 #' @examples
 #' \dontrun{
+#' ``` yaml
 #' ---
 #' ...
 #' output: Rmdx::rmdx_docx
 #' ---
+#' ```
 #' }
 rmdx_docx = function(toc = TRUE) {
   # locations of resource files in the package

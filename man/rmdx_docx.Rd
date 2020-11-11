@@ -20,9 +20,11 @@ This format is based in \code{\link[officedown]{rdocx_document}}.
 }
 \examples{
 \dontrun{
+``` yaml
 ---
 ...
 output: Rmdx::rmdx_docx
 ---
+```
 }
 }
