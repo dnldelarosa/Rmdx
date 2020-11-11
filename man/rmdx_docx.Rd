@@ -15,6 +15,9 @@ An R Markdown output format object to be passed to \code{\link[rmarkdown]{render
 \description{
 \lifecycle{experimental}
 }
+\details{
+This format is based in \code{\link[officedown]{rdocx_document}}.
+}
 \examples{
 \dontrun{
 ---

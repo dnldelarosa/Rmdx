@@ -34,6 +34,12 @@ An R Markdown output format object to be passed to \code{\link[rmarkdown]{render
 }
 \details{
 This format is based in \code{\link[bookdown]{html_document2}}.
+
+\itemize{
+\item{Added attractive header}
+\item{Added indentation to title levels}
+\item{Added footer credits}
+}
 }
 \examples{
 \dontrun{

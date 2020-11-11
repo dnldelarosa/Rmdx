@@ -23,8 +23,6 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/package=Rmdx)
 <!-- badges: end -->
 
-The goal of Rmdx is to ...
-
 ## Installation
 
 Rmdx is not yet in CRAN.
@@ -41,15 +39,24 @@ You can install the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("drdsdaniel/Rmdx")
 ```
-## Example
+## Examples
 
 ### rmdx_html
+
+Builded on top of [html_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html). See [rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html) reference page for additional details.
+
 <img src='man/figures/html.png'/>
 
 ### rmdx_pdf
+
+Builded on top of [pdf_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html). See [rmdx_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html) reference page for additional details.
+
 <img src='man/figures/pdf.png'/>
 
 ### rmdx_docx
+
+Builded on top of [rdocx_document](https://davidgohel.github.io/officedown/reference/rdocx_document.html). See [rmdx_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html) reference page for additional details.
+
 <img src='man/figures/docx.png'/>
 
 ## TODO
@@ -58,4 +65,4 @@ devtools::install_github("drdsdaniel/Rmdx")
 
 - html format with toc in lateral.
   
-- add spanish language suport for tables and figures labels
+- add spanish language support for tables and figures labels

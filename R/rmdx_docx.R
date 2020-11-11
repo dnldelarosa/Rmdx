@@ -2,6 +2,8 @@
 #'
 #' \lifecycle{experimental}
 #'
+#'  This format is based in \code{\link[officedown]{rdocx_document}}.
+#'
 #' @param toc logical See \code{\link[rmarkdown]{word_document}}
 #'
 #' @return An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}

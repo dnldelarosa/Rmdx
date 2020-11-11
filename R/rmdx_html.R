@@ -11,6 +11,14 @@
 #' @param footer_name character author name to be included in footer
 #' @param ... arguments to be passed to \code{\link[bookdown]{html_document2}}
 #'
+#' @details
+#'
+#' \itemize{
+#'   \item{Added attractive header}
+#'   \item{Added indentation to title levels}
+#'   \item{Added footer credits}
+#' }
+#'
 #'
 #' @return An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}
 #'

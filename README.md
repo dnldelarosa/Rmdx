@@ -17,8 +17,6 @@ maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www
 status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/package=Rmdx)
 <!-- badges: end -->
 
-The goal of Rmdx is to …
-
 ## Installation
 
 Rmdx is not yet in CRAN.
@@ -39,17 +37,35 @@ You can install the development version from
 devtools::install_github("drdsdaniel/Rmdx")
 ```
 
-## Example
+## Examples
 
 ### rmdx\_html
+
+Builded on top of
+[html\_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
+See
+[rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
+reference page for additional details.
 
 <img src='man/figures/html.png'/>
 
 ### rmdx\_pdf
 
+Builded on top of
+[pdf\_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
+See
+[rmdx\_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
+reference page for additional details.
+
 <img src='man/figures/pdf.png'/>
 
 ### rmdx\_docx
+
+Builded on top of
+[rdocx\_document](https://davidgohel.github.io/officedown/reference/rdocx_document.html).
+See
+[rmdx\_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
+reference page for additional details.
 
 <img src='man/figures/docx.png'/>
 
@@ -59,4 +75,4 @@ devtools::install_github("drdsdaniel/Rmdx")
 
   - html format with toc in lateral.
 
-  - add spanish language suport for tables and figures labels
+  - add spanish language support for tables and figures labels
