@@ -33,8 +33,43 @@ You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+tryCatch(
+  library(devtools),
+  error = function(e){
+    install.packages('devtools')
+  }
+)
 devtools::install_github("drdsdaniel/Rmdx")
+```
+
+## Usage
+
+If you are using RStudio, you can create a new Rmdx document from file
+menu: `File -> New file -> R Markdown -> From Template`.
+
+<img src='man/figures/new_file.png'/>
+
+> You need to have restarted RStudio at least once since the Rmdx
+> installation.
+
+If you are working outside of RStudio or the desired file has already
+been created, you just need to set the output in the yaml to be Rmdx:
+rmdx\_html.
+
+``` yaml
+---
+title: "Template Title"
+author: "Daniel E. de la Rosa"
+date: "November 10, 2020"
+output: 
+  Rmdx::rmdx_html:
+    footer_name: 'Daniel E. de la Rosa'
+    
+toc-title: 'Contents'
+fig_caption: true
+bibliography: 'bibliography.bib' 
+nocite: '@*' 
+---
 ```
 
 ## Examples
