@@ -19,9 +19,17 @@
 #' ---
 #' }
 rmdx_pdf = function(toc = TRUE, latex_engine = 'xelatex', ...) {
+  # locations of resource files in the package
+  pkg_resource = function(...) {
+    system.file(..., package = "Rmdx")
+  }
+
+  preamble = pkg_resource("resources/pdf/preamble.tex")
+
   bookdown::pdf_document2(
     toc = toc,
     latex_engine = latex_engine,
+    includes = rmarkdown::includes(in_header =  preamble),
     ...
   )
 }
