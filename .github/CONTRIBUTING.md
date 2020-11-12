@@ -16,6 +16,10 @@ If you want to make a bigger change, it's a good idea to first file an issue and
 If you’ve found a bug, please file an issue that illustrates the bug with a minimal 
 [reprex](https://www.tidyverse.org/help/#reprex) (this will also help you write a unit test, if needed).
 
+### Commit style
+
+The only exception are commit messages, where we will use the [Angular style convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit). Due to the nature of the project we will omit the scope in the commit header (e.g. doc: add commit convention to CONTRIBUTING)
+
 ### Pull request process
 
 *   Fork the package and clone onto your computer. If you haven't done this before, we recommend using `usethis::create_from_github("drdsdaniel/Rmdx", fork = TRUE)`.
