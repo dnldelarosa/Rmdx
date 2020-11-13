@@ -54,7 +54,7 @@ rmdx_html = function(
                   </span>
                   ', format(Sys.Date(), '%Y'),' - ',
       fName,
-      ' with help of <a target="_blank" href="https://drdsdaniel.github.io/Rmdx/">Rmdx</a> </div>'
+      '   w/   <a target="_blank" href="https://drdsdaniel.github.io/Rmdx/">Rmdx</a> </div>'
     ), con = tf <- tempfile(fileext = '.html'))
     tf
   }
