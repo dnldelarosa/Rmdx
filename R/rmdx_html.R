@@ -64,6 +64,7 @@ rmdx_html = function(
     toc = toc,
     css = css,
     highlight = highlight,
-    includes = rmarkdown::includes(after_body = tempFooter())
+    includes = rmarkdown::includes(after_body = tempFooter()),
+    ...
   )
 }
