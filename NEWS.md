@@ -6,3 +6,12 @@
 * Added `Contributing` section to `README` file.
 * Added `contributing guides` to the project.
 * Added `preamble` to `rmdx_pdf` format for use `longtable` and `multirow` packages.
+
+# Rmdx 0.6.9.9000
+
+* Improve whole package documentation
+* Added whole package tests
+
+# Rmdx 0.6.10.9000
+
+* Fix rmdx_html: pass additional arguments to html_document2
