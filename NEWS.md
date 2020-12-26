@@ -12,6 +12,7 @@
 * Improve whole package documentation
 * Added whole package tests
 
-# Rmdx 0.6.10.9000
+# Rmdx 0.6.11.9000
 
+* Fix rmdx_html: pass number_section argument to html_document2
 * Fix rmdx_html: pass additional arguments to html_document2

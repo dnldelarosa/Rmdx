@@ -62,6 +62,7 @@ rmdx_html = function(
   # call the base html_document function
   bookdown::html_document2(
     toc = toc,
+    number_sections = number_sections,
     css = css,
     highlight = highlight,
     includes = rmarkdown::includes(after_body = tempFooter()),
