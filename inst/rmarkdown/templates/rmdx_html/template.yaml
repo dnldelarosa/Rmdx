@@ -1,4 +1,4 @@
-name: rmdx_html
+name: Rmdx HTML
 description: >
-   A description of the template
+   A custom versión of bookdown::html_document2 format.
 create_dir: FALSE

@@ -1,4 +1,5 @@
-name: rmdx_docx
+name: Rmdx Word document (Docx)
 description: >
-   A description of the template
+   A very customize and more customizable version of officedown::rdocx_document
+   format.
 create_dir: FALSE

@@ -1,4 +1,4 @@
-name: rmdx_pdf
+name: Rmdx PDF
 description: >
-   A description of the template
+   A very customize version of bookdown::pdf_document2 format.
 create_dir: FALSE
