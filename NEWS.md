@@ -17,3 +17,7 @@
 * Fix rmdx_html: pass number_section argument to html_document2
 * Fix rmdx_html: pass additional arguments to html_document2
 * Fix templates names and descriptions
+
+# Rmdx 0.6.12
+
+* Changed palette colors and default code highlight

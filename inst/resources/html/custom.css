@@ -1,11 +1,12 @@
 #header{
   text-align: center;
-  background-color: #009687;
+  background-color: #35867C;
   color: #fff;
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 15px;
-  padding-top: 30px;
+  margin-top: -30px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 
@@ -97,7 +98,7 @@ img {
 
 .footer {
   text-align: center;
-  background-color: #3B4045;
+  background-color: #002538;
   color: #fff;
   margin-right: -15px;
   margin-left: -15px;
@@ -120,5 +121,5 @@ code {
 }
 
 mark {
-    background-color: yellow !important;
+    background-color: #E89B26 !important;
 }

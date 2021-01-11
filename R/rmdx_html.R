@@ -34,7 +34,7 @@
 rmdx_html = function(
   toc = TRUE,
   number_sections = TRUE,
-  highlight = 'pygments',
+  highlight = 'espresso',
   footer_name = 'Daniel E. de la Rosa',
   footer_copy = 'left',
   ...) {
