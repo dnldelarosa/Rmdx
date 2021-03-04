@@ -33,7 +33,7 @@ rmdx_html(
 An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}
 }
 \description{
-\lifecycle{maturing}
+\lifecycle{stable}
 }
 \details{
 This format is based in \code{\link[bookdown]{html_document2}}.

@@ -1,6 +1,6 @@
 #' Rmdx HTML document format
 #'
-#' \lifecycle{maturing}
+#' \lifecycle{stable}
 #'
 #'  This format is based in \code{\link[bookdown]{html_document2}}.
 #'
