@@ -4,18 +4,28 @@
 # Rmdx: RMarkdwon extra formats <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R build
 status](https://github.com/drdsdaniel/Rmdx/workflows/R-CMD-check/badge.svg)](https://github.com/drdsdaniel/Rmdx/actions)
-[![Travis build
-status](https://travis-ci.com/drdsdaniel/Rmdx.svg?branch=main)](https://travis-ci.com/drdsdaniel/Rmdx)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Codecov test
 coverage](https://codecov.io/gh/drdsdaniel/Rmdx/branch/main/graph/badge.svg)](https://codecov.io/gh/drdsdaniel/Rmdx?branch=main)
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/package=Rmdx)
 <!-- badges: end -->
+
+`Rmdx` provide very customize formats for Rmarkdown documents. The 3
+main document availables are:
+
+-   rmxd\_html
+-   rmdx\_docx
+-   rmdx\_pdf
+
+See examples for more details.
 
 ## Installation
 
@@ -101,14 +111,16 @@ reference page for additional details.
 
 <img src='man/figures/docx.png'/>
 
+## crender
+
+Rmdx also provide a template for easy start with
+[crender](https://github.com/drdsdaniel/crender) package.
+
 ## Roadmap
 
-Rmdx is an early stage and have a not clear scope. Likewise, Rmdx will
-be useful to me with some elements of
-[crender](https://github.com/drdsdaniel/crender) package. These are some
-of the ideas that at the moment I plan to add to the package. Feel free
-to propose any change that you consider pertinent. Look at
-`Contributing` below to see how.
+These are some of the ideas that at the moment I plan to add to the
+package. Feel free to propose any change that you consider pertinent.
+Look at `Contributing` below to see how.
 
 1.  Make
     [rmdx\_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
