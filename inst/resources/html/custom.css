@@ -121,5 +121,6 @@ code {
 }
 
 mark {
+  color: #fff !important;
     background-color: #E89B26 !important;
 }
