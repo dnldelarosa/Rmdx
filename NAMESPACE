@@ -3,3 +3,4 @@
 export(rmdx_docx)
 export(rmdx_html)
 export(rmdx_pdf)
+importFrom(lifecycle,deprecate_soft)
