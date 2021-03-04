@@ -1,6 +1,6 @@
 #' Rmdx PDF document format
 #'
-#' \lifecycle{maturing}
+#' \lifecycle{experimental}
 #'
 #' This format is based in \code{\link[bookdown]{pdf_document2}}.
 #'

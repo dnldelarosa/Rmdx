@@ -17,7 +17,7 @@ rmdx_pdf(toc = TRUE, latex_engine = "xelatex", ...)
 An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}
 }
 \description{
-\lifecycle{maturing}
+\lifecycle{experimental}
 }
 \details{
 This format is based in \code{\link[bookdown]{pdf_document2}}.
