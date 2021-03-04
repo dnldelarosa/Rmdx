@@ -3,32 +3,84 @@ title: "Template Title"
 author: "Daniel E. de la Rosa"
 date: "`r Dmisc::Sys_Date_locale()`"
 output: 
-  Rmdx::rmdx_html:
-    footer_name: 'Daniel E. de la Rosa'
-  Rmdx::rmdx_docx: defaulr
+  ioslides_presentation: default
   Rmdx::rmdx_pdf: default
-    
+  Rmdx::rmdx_html:
+    df_print: paged
+    footer_name: 'Daniel E. de la Rosa'
 toc-title: 'Contents'
 fig_caption: true
 bibliography: 'bibliography.bib' 
 nocite: '@*' 
-
 params:
   html: yes
-  docx: no
+  ioslides: no
   latex: no
 ---
 
 ```{r setup, include=FALSE}
 library(crender)
-knitr::opts_chunk$set(echo = cr_val(), comment = "")
+knitr::opts_chunk$set(echo = cr_val(), include = cr_val(), comment = "")
 ```
 
+---
 
+This document generates three different documents:
 
+* An __html__ with interactive content and so on.
+* A __pdf (latex) __ with more summarized and formal content.
+* A presentation in __ioslides__ with fairly summarized information for presentation purposes.
 
+Each of these documents has its own structure but they share some elements, such as the fact that the processing occurs only once and is shared among all you documents, which means that if you make a change in any calculation or formula, you will see reflected in all related documents immediately.
 
+You can also read the [quick start guide] (https://drdsdaniel.github.io/crender/articles/crender.html) of crender for more details.
+In __crender__ the normal text appears in all formats.
 
+`r cr_content("
+# Text
 
+To insert text conditionally you must use the __cr_content()__ function.
+
+This text will only appear in the formats marked __true, yes or TRUE__ in the yaml (in this case only in the _html_ format). If the format is not specified in the yaml parameters, the default value is __true__.
+
+You can also insert simple R evaluations along with the text. To do this you must enclose the code in braces. For example {sum(1:4)}, it will look like 10.
+
+# Code chunk
+
+By default, the code chunks will only affect the formats marked as __true, yes or TRUE__ in the yaml, as long as the corresponding settings have been established in the chunk options __echo = cr_val():__ indicates that the code will appear in the formats marked as __rue, yes or TRUE__ in the yaml; __include = cr_val():__ indicates that the results of the code block will be inserted in the formats marked as __true, yes or TRUE__ in the yaml; and so on for all other Boolean type chunk options.
+")`
+
+```{r}
+cars
+```
+
+`r cr_content("
+# Double conditional
+
+The double conditional, __cr2__, negates the default value for a format. 
+
+In this case, this text and the graphic below will be available in the __pdf (latex)__ format which is set as _false_ in the yaml and when negated by the double conditional, resulting in _true_; in the __html__ that this is set to _true_ in the yaml and the double conditional is not affecting it; but not in the __ioslides__ since on the contrary it is set as _false_ in the yaml and the double conditional is not affecting it.
+
+You can double condition as many formats as you want.
+
+", cr2 = c("latex"))`
+
+```{r echo=TRUE, include=cr_val(cr2 = "latex")}
+plot(cars)
+```
+
+`r cr_content("
+# Exclusive content
+
+---
+
+Furthermore, if you want to display content in specific formats, then you can use the __only__ argument of the _crender functions_, so this text, the code and the resulting table below will only be available in the __ioslides__ presentation.
+", only = "ioslides")`
+
+```{r echo=cr_val(only="ioslides"), include=cr_val(only=c("ioslides"))}
+head(cars)
+```
 
 # Bibliography {-}
+
+`r cr_content("---", only = "ioslides")`
