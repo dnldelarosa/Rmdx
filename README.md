@@ -22,11 +22,8 @@ status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/p
 Rmdx is not yet in CRAN.
 
 <!-- You can install the released version of Rmdx from [CRAN](https://CRAN.R-project.org) with: -->
-
 <!-- ``` r -->
-
 <!-- install.packages("Rmdx") -->
-
 <!-- ``` -->
 
 You can install the development version from
@@ -34,12 +31,12 @@ You can install the development version from
 
 ``` r
 tryCatch(
-  library(devtools),
+  library(remotes),
   error = function(e){
-    install.packages('devtools')
+    install.packages('remotes')
   }
 )
-devtools::install_github("drdsdaniel/Rmdx")
+remotes::install_github("drdsdaniel/Rmdx")
 ```
 
 ## Usage
@@ -60,7 +57,7 @@ rmdx\_html.
 ---
 title: "Template Title"
 author: "Daniel E. de la Rosa"
-date: "November 11, 2020"
+date: "marzo 03, 2021"
 output: 
   Rmdx::rmdx_html:
     footer_name: 'Daniel E. de la Rosa'
@@ -107,25 +104,37 @@ reference page for additional details.
 ## Roadmap
 
 Rmdx is an early stage and have a not clear scope. Likewise, Rmdx will
-be useful to me with some elements of another package that is in
-development. These are some of the ideas that at the moment I plan to
-add to the package. Feel free to propose any change that you consider
-pertinent. Look at `Contributing` below to see how.
+be useful to me with some elements of
+[crender](https://github.com/drdsdaniel/crender) package. These are some
+of the ideas that at the moment I plan to add to the package. Feel free
+to propose any change that you consider pertinent. Look at
+`Contributing` below to see how.
 
 1.  Make
     [rmdx\_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
     full compatible with
     [rdox\_document](https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R)
-
 2.  Make a version of
     [rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
     with float toc in the rmdx style
-
 3.  Add Spanish language support for some of the rmdx functions
-
 4.  Lots of changes to the
     [rmdx\_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
     format. To be notified on the fly.
+5.  Add “Blockquotes” format.
+    ([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+6.  Format warning and errors
+    messages.([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+7.  Go to top button.
+    ([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+8.  Paged HTML format.
+9.  Add a function and vignette to show supported formats with the
+    corresponding urls
+10. The ability of embed additional information to HTML file, like
+    external files, datasets or r session information. This information
+    may be accessed like modals, via the toc (if available) or for
+    clickable elements in the footer of doc.
+    <!-- https://ijlyttle.github.io/bsplus/articles/modal.html#modal_markdown-title      APLICA PARA CRENDER, DE FORMA QUE EN UN FORMATO NO HTML SE CONVIERTA EN UN ANEXO-->
 
 ## Contributing
 

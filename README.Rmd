@@ -37,12 +37,12 @@ You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 tryCatch(
-  library(devtools),
+  library(remotes),
   error = function(e){
-    install.packages('devtools')
+    install.packages('remotes')
   }
 )
-devtools::install_github("drdsdaniel/Rmdx")
+remotes::install_github("drdsdaniel/Rmdx")
 ```
 
 ## Usage
@@ -94,16 +94,19 @@ Builded on top of [rdocx_document](https://davidgohel.github.io/officedown/refer
 
 ## Roadmap
 
-Rmdx is an early stage and have a not clear scope. Likewise, Rmdx will be useful to me with some elements of another package that is in development. These are some of the ideas that at the moment I plan to add to the package. Feel free to propose any change that you consider pertinent. Look at `Contributing` below to see how.
+Rmdx is an early stage and have a not clear scope. Likewise, Rmdx will be useful to me with some elements of [crender](https://github.com/drdsdaniel/crender) package. These are some of the ideas that at the moment I plan to add to the package. Feel free to propose any change that you consider pertinent. Look at `Contributing` below to see how.
 
 
 1. Make [rmdx_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html) full compatible with [rdox_document](https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R)
-
 2. Make a version of [rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html) with float toc in the rmdx style
-
 3. Add Spanish language support for some of the rmdx functions
-
 4. Lots of changes to the [rmdx_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html) format. To be notified on the fly.
+5. Add "Blockquotes" format. ([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+6. Format warning and errors messages.([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+7. Go to top button. ([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+8. Paged HTML format.
+9. Add a function and vignette to show supported formats with the corresponding urls 
+10. The ability of embed additional information to HTML file, like external files, datasets or r session information. This information may be accessed like modals, via the toc (if available) or for clickable elements in the footer of doc. <!-- https://ijlyttle.github.io/bsplus/articles/modal.html#modal_markdown-title      APLICA PARA CRENDER, DE FORMA QUE EN UN FORMATO NO HTML SE CONVIERTA EN UN ANEXO-->
 
 
 ## Contributing
