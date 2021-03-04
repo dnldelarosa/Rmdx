@@ -9,6 +9,7 @@
 #' @param highlight character See \code{\link[rmarkdown]{html_document}}
 #' @param footer_copy character much be 'left' or 'right'
 #' @param footer_name character author name to be included in footer
+#' @param df_print character See \code{\link[rmarkdown]{html_document}}
 #' @param ... arguments to be passed to \code{\link[bookdown]{html_document2}}
 #'
 #' @details
@@ -37,6 +38,7 @@ rmdx_html = function(
   highlight = 'espresso',
   footer_name = 'Daniel E. de la Rosa',
   footer_copy = 'left',
+  df_print = "paged",
   ...) {
   # locations of resource files in the package
   pkg_resource = function(...) {
@@ -66,6 +68,7 @@ rmdx_html = function(
     css = css,
     highlight = highlight,
     includes = rmarkdown::includes(after_body = tempFooter()),
+    df_print = df_print,
     ...
   )
 }

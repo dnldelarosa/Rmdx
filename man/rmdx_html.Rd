@@ -10,6 +10,7 @@ rmdx_html(
   highlight = "espresso",
   footer_name = "Daniel E. de la Rosa",
   footer_copy = "left",
+  df_print = "paged",
   ...
 )
 }
@@ -23,6 +24,8 @@ rmdx_html(
 \item{footer_name}{character author name to be included in footer}
 
 \item{footer_copy}{character much be 'left' or 'right'}
+
+\item{df_print}{character See \code{\link[rmarkdown]{html_document}}}
 
 \item{...}{arguments to be passed to \code{\link[bookdown]{html_document2}}}
 }
