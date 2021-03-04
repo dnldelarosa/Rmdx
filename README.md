@@ -67,7 +67,7 @@ rmdx\_html.
 ---
 title: "Template Title"
 author: "Daniel E. de la Rosa"
-date: "marzo 03, 2021"
+date: "marzo 04, 2021"
 output: 
   Rmdx::rmdx_html:
     footer_name: 'Daniel E. de la Rosa'
@@ -140,13 +140,12 @@ Look at `Contributing` below to see how.
 7.  Go to top button.
     ([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 8.  Paged HTML format.
-9.  Add a function and vignette to show supported formats with the
-    corresponding urls
-10. The ability of embed additional information to HTML file, like
+9.  The ability of embed additional information to HTML file, like
     external files, datasets or r session information. This information
     may be accessed like modals, via the toc (if available) or for
     clickable elements in the footer of doc.
     <!-- https://ijlyttle.github.io/bsplus/articles/modal.html#modal_markdown-title      APLICA PARA CRENDER, DE FORMA QUE EN UN FORMATO NO HTML SE CONVIERTA EN UN ANEXO-->
+10. Add tests for pdf and docx formats
 
 ## Contributing
 

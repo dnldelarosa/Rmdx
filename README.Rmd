@@ -116,8 +116,8 @@ Rmdx also provide a template for easy start with [crender](https://github.com/dr
 6. Format warning and errors messages.([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 7. Go to top button. ([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 8. Paged HTML format.
-9. Add a function and vignette to show supported formats with the corresponding urls 
-10. The ability of embed additional information to HTML file, like external files, datasets or r session information. This information may be accessed like modals, via the toc (if available) or for clickable elements in the footer of doc. <!-- https://ijlyttle.github.io/bsplus/articles/modal.html#modal_markdown-title      APLICA PARA CRENDER, DE FORMA QUE EN UN FORMATO NO HTML SE CONVIERTA EN UN ANEXO-->
+9. The ability of embed additional information to HTML file, like external files, datasets or r session information. This information may be accessed like modals, via the toc (if available) or for clickable elements in the footer of doc. <!-- https://ijlyttle.github.io/bsplus/articles/modal.html#modal_markdown-title      APLICA PARA CRENDER, DE FORMA QUE EN UN FORMATO NO HTML SE CONVIERTA EN UN ANEXO-->
+10. Add tests for pdf and docx formats
 
 
 ## Contributing
