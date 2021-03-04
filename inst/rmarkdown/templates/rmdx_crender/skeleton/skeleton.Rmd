@@ -1,0 +1,34 @@
+---
+title: "Template Title"
+author: "Daniel E. de la Rosa"
+date: "`r Dmisc::Sys_Date_locale()`"
+output: 
+  Rmdx::rmdx_html:
+    footer_name: 'Daniel E. de la Rosa'
+  Rmdx::rmdx_docx: defaulr
+  Rmdx::rmdx_pdf: default
+    
+toc-title: 'Contents'
+fig_caption: true
+bibliography: 'bibliography.bib' 
+nocite: '@*' 
+
+params:
+  html: yes
+  docx: no
+  latex: no
+---
+
+```{r setup, include=FALSE}
+library(crender)
+knitr::opts_chunk$set(echo = cr_val(), comment = "")
+```
+
+
+
+
+
+
+
+
+# Bibliography {-}
