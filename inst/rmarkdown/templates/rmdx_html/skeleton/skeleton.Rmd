@@ -1,7 +1,7 @@
 ---
 title: "Template Title"
 author: "Daniel E. de la Rosa"
-date: "`r Dmisc::Sys_Date_locale()`"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
   Rmdx::rmdx_html:
     footer_name: 'Daniel E. de la Rosa'
