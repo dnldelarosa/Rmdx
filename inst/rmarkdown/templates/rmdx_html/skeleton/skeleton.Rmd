@@ -13,7 +13,7 @@ nocite: '@*'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, comment = "")
+knitr::opts_chunk$set(echo = TRUE, comment = "", fig.align = "center", fig.dim=c(6,4))
 ```
 
 
