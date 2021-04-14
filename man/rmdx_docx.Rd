@@ -4,10 +4,14 @@
 \alias{rmdx_docx}
 \title{Rmdx DOCX document format}
 \usage{
-rmdx_docx(toc = TRUE)
+rmdx_docx(toc = TRUE, highlight = "pygments", ...)
 }
 \arguments{
-\item{toc}{logical See \code{\link[rmarkdown]{word_document}}}
+\item{toc}{\link{logical}: See \code{\link[rmarkdown]{word_document}}}
+
+\item{highlight}{\link{character}: See \code{\link[rmarkdown]{html_document}} highlight argument}
+
+\item{...}{other arguments passed to \code{\link[officedown]{rdocx_document}}}
 }
 \value{
 An R Markdown output format object to be passed to \code{\link[rmarkdown]{render}}

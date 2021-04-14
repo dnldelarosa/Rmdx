@@ -2,7 +2,15 @@
 title: "Template Title"
 author: "Daniel E. de la Rosa"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
-output: Rmdx::rmdx_docx
+output: 
+  Rmdx::rmdx_docx:
+    tables:
+      caption:
+        pre: "Tabla "
+    plots:
+      topcaption: yes
+      caption:
+        pre: "Figura "
 
 toc-title: 'Contents'
 fig_caption: true
@@ -12,7 +20,7 @@ nocite: '@*'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, comment = "", fig.align = "center", fig.dim=c(6,4), dpi = 600, t, tab.id = "tab")
 ```
 
 
