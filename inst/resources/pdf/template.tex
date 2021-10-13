@@ -24,8 +24,12 @@
   $if(authors.department)$
   $authors.department$ \\
   $endif$
+  $if(authors.affiliation)$
   $authors.affiliation$ \\
+  $endif$
+  $if(authors.email)$
   $authors.location$ \\
+  $endif$
   \texttt{$authors.email$} \\
   $sep$ \And
   $endfor$
