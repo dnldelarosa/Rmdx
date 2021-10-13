@@ -29,7 +29,10 @@ rmdx_docx = function(toc = TRUE, highlight = 'pygments', ...) {
 
   base_docx = pkg_resource("resources/docx/base.docx")
 
-  # call the base html_document function
+  if (!requireNamespace("officedown", quietly = TRUE)) {
+    stop("Package \"officedown\" needed for this function to work. Please install it.", call. = FALSE)
+  }
+
   officedown::rdocx_document(
     toc = toc,
     highlight = highlight,

@@ -61,7 +61,10 @@ rmdx_html = function(
     tf
   }
 
-  # call the base html_document function
+  if (!requireNamespace("bookdown", quietly = TRUE)) {
+    stop("Package \"bookdown\" needed for this function to work. Please install it.", call. = FALSE)
+  }
+
   bookdown::html_document2(
     toc = toc,
     number_sections = number_sections,

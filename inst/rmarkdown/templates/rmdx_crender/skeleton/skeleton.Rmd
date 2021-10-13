@@ -19,6 +19,7 @@ params:
 ---
 
 ```{r setup, include=FALSE}
+#tryCatch(library(remotes), error = function(e){install.packages('remotes')}); remotes::install_github("drdsdaniel/crender")
 library(crender)
 knitr::opts_chunk$set(echo = cr_val(), include = cr_val(), comment = "")
 ```

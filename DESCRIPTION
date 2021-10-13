@@ -1,7 +1,7 @@
 Package: Rmdx
 Type: Package
 Title: RMarkdown Extra Formats
-Version: 0.7.5.9000
+Version: 0.8.0
 Authors@R: person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
@@ -17,13 +17,13 @@ URL: https://drdsdaniel.github.io/Rmdx/, https://github.com/drdsdaniel/Rmdx
 BugReports: https://github.com/drdsdaniel/Rmdx/issues
 Imports:
     lifecycle,
-    bookdown,
-    rmarkdown,
-    officedown,
-    crender (>= 0.6.0.9000)
+    rmarkdown
 RdMacros: lifecycle
 Suggests: 
     testthat,
-    covr
+    covr,
+    bookdown,
+    officedown,
+    crender (>= 0.6.0.9000)
 Remotes: 
     drdsdaniel/crender

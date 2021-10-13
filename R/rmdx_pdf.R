@@ -26,6 +26,10 @@ rmdx_pdf = function(toc = TRUE, latex_engine = 'xelatex', ...) {
 
   preamble = pkg_resource("resources/pdf/preamble.tex")
 
+  if (!requireNamespace("bookdown", quietly = TRUE)) {
+    stop("Package \"bookdown\" needed for this function to work. Please install it.", call. = FALSE)
+  }
+
   bookdown::pdf_document2(
     toc = toc,
     latex_engine = latex_engine,
