@@ -21,3 +21,7 @@
 # Rmdx 0.6.12
 
 * Changed palette colors and default code highlight
+
+# Rmdx 0.9.0
+
+* New `rmdx_paper` format

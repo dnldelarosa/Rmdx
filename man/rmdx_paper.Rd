@@ -17,6 +17,14 @@ An R Markdown output format object to be passed to \code{\link[rmarkdown]{render
 }
 \details{
 This format is highly based in \code{\link[rticles]{arxiv_article}}.
+The main changes can be summarized as:
+\enumerate{
+\item An alternative abstract (\code{abstract_alt}) is included with its respective
+title (\code{aatitle}). Which can be used to write the abstract in another
+language.
+\item A short title (\code{short-title}) is included and placed at the top of
+the document pages.
+}
 }
 \examples{
 \dontrun{

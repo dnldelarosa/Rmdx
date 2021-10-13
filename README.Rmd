@@ -28,6 +28,7 @@ knitr::opts_chunk$set(
 * rmxd_html
 * rmdx_docx
 * rmdx_pdf
+* rmdx_paper
 
 See examples for more details.
 
@@ -98,6 +99,12 @@ Builded on top of [pdf_document2](https://rdrr.io/pkg/bookdown/man/html_document
 Builded on top of [rdocx_document](https://davidgohel.github.io/officedown/reference/rdocx_document.html). See [rmdx_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html) reference page for additional details.
 
 <img src='man/figures/docx.png'/>
+
+### rmdx_paper
+
+Builded on top of [arxiv_article](https://pkgs.rstudio.com/rticles/reference/article.html). See [rmdx_paper](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html) details in reference page for additional info.
+
+<img src='man/figures/paper.png'/>
 
 ## crender
 
