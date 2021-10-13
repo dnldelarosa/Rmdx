@@ -1,7 +1,7 @@
 Package: Rmdx
 Type: Package
 Title: RMarkdown Extra Formats
-Version: 0.9.3
+Version: 0.10.0
 Authors@R: person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
@@ -23,7 +23,4 @@ Suggests:
     testthat,
     covr,
     bookdown,
-    officedown,
-    crender (>= 0.6.0.9000)
-Remotes: 
-    drdsdaniel/crender
+    officedown
