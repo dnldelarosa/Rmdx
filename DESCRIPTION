@@ -1,7 +1,7 @@
 Package: Rmdx
 Type: Package
 Title: RMarkdown Extra Formats
-Version: 0.9.1
+Version: 0.9.2
 Authors@R: person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
