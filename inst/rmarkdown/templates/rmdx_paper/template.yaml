@@ -1,0 +1,4 @@
+name: Rmdx journal document (paper)
+description: >
+   A slightly customize version of rticles::arxiv_article format.
+create_dir: FALSE
