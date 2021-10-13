@@ -17,9 +17,9 @@
 #' ---
 #' }
 rmdx_paper = function(...) {
-  pkg_resource = function(...) {system.file(..., package = "Rmdx")}
-  template = pkg_resource("resources/pdf/template.tex")
-  rmarkdown::pdf_document(..., template = template)
+  pkg_resource <-  function(...) {system.file(..., package = "Rmdx")}
+  template <-  pkg_resource("resources/pdf/template.tex")
+  fmt <- rmarkdown::pdf_document(..., template = template)
   fmt$inherits <- "pdf_document"
   fmt
 }
