@@ -13,6 +13,11 @@
 \usepackage{microtype}      % microtypography
 \usepackage{graphicx}
 
+$if(lang)$
+\usepackage[$lang$]{babel}
+\AtBeginDocument{\selectlanguage{$lang$}}
+$endif$
+
 \title{$title$}
 
 \author{

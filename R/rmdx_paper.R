@@ -9,6 +9,8 @@
 #'   language.
 #'   2. A short title (\code{short-title}) is included and placed at the top of
 #'   the document pages.
+#'   3. Add a language (\code{lang}) argument for locale configurations. See
+#'   \href{https://www.overleaf.com/learn/latex/International_language_support}{Latex international language support} for details.
 #'
 #' @param ... arguments to be passed to \code{\link[rmarkdown]{pdf_document}}
 #'

@@ -24,6 +24,8 @@ title (\code{aatitle}). Which can be used to write the abstract in another
 language.
 \item A short title (\code{short-title}) is included and placed at the top of
 the document pages.
+\item Add a language (\code{lang}) argument for locale configurations. See
+\href{https://www.overleaf.com/learn/latex/International_language_support}{Latex international language support} for details.
 }
 }
 \examples{
