@@ -21,9 +21,10 @@ status](https://www.r-pkg.org/badges/version/Rmdx)](https://CRAN.R-project.org/p
 `Rmdx` provide very customize formats for Rmarkdown documents. The 3
 main document availables are:
 
--   rmxd\_html
--   rmdx\_docx
--   rmdx\_pdf
+-   rmxd_html
+-   rmdx_docx
+-   rmdx_pdf
+-   rmdx_paper
 
 See examples for more details.
 
@@ -61,13 +62,13 @@ menu: `File -> New file -> R Markdown -> From Template`.
 
 If you are working outside of RStudio or the desired file has already
 been created, you just need to set the output in the yaml to be Rmdx:
-rmdx\_html.
+rmdx_html.
 
 ``` yaml
 ---
 title: "Template Title"
 author: "Daniel E. de la Rosa"
-date: "marzo 04, 2021"
+date: "November 02, 2021"
 output: 
   Rmdx::rmdx_html:
     footer_name: 'Daniel E. de la Rosa'
@@ -81,35 +82,45 @@ nocite: '@*'
 
 ## Examples
 
-### rmdx\_html
+### rmdx_html
 
 Builded on top of
-[html\_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
+[html_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
 See
-[rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
+[rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
 reference page for additional details.
 
 <img src='man/figures/html.png'/>
 
-### rmdx\_pdf
+### rmdx_pdf
 
 Builded on top of
-[pdf\_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
+[pdf_document2](https://rdrr.io/pkg/bookdown/man/html_document2.html).
 See
-[rmdx\_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
+[rmdx_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
 reference page for additional details.
 
 <img src='man/figures/pdf.png'/>
 
-### rmdx\_docx
+### rmdx_docx
 
 Builded on top of
-[rdocx\_document](https://davidgohel.github.io/officedown/reference/rdocx_document.html).
+[rdocx_document](https://davidgohel.github.io/officedown/reference/rdocx_document.html).
 See
-[rmdx\_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
+[rmdx_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
 reference page for additional details.
 
 <img src='man/figures/docx.png'/>
+
+### rmdx_paper
+
+Builded on top of
+[arxiv_article](https://pkgs.rstudio.com/rticles/reference/article.html).
+See
+[rmdx_paper](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
+details in reference page for additional info.
+
+<img src='man/figures/paper.png'/>
 
 ## crender
 
@@ -123,22 +134,22 @@ package. Feel free to propose any change that you consider pertinent.
 Look at `Contributing` below to see how.
 
 1.  Make
-    [rmdx\_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
+    [rmdx_docx](https://drdsdaniel.github.io/Rmdx/reference/rmdx_docx.html)
     full compatible with
-    [rdox\_document](https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R)
+    [rdox_document](https://github.com/davidgohel/officedown/blob/master/R/rdocx_document.R)
 2.  Make a version of
-    [rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
+    [rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html)
     with float toc in the rmdx style
 3.  Add Spanish language support for some of the rmdx functions
 4.  Lots of changes to the
-    [rmdx\_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
+    [rmdx_pdf](https://drdsdaniel.github.io/Rmdx/reference/rmdx_pdf.html)
     format. To be notified on the fly.
 5.  Add “Blockquotes” format.
-    ([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+    ([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 6.  Format warning and errors
-    messages.([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+    messages.([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 7.  Go to top button.
-    ([rmdx\_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
+    ([rmdx_html](https://drdsdaniel.github.io/Rmdx/reference/rmdx_html.html))
 8.  Paged HTML format.
 9.  The ability of embed additional information to HTML file, like
     external files, datasets or r session information. This information

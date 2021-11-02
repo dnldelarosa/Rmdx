@@ -14,16 +14,16 @@ authors:
     affiliation: Mount-Sheikh University
     location: Santa Narimana, Levand
     email: stariate@ee.mount-sheikh.edu
-abstract: |
-  Enter the text of your abstract here.
-abstract_alt: |
-  Escribe tu resumen aquí.
-aatitle: Resumen
-keywords:
-  - blah
-  - blee
-  - bloo
-  - these are optional and can be removed
+abstracts: 
+  - title: Resumen
+    text: Español aquí
+    keywords: bla ble bli
+    ktitle: Palabras clave
+     
+  - title: Abstract
+    text: English here
+    keywords: blah blee bloo
+    ktitle: Keywords
 bibliography: bibliography.bib
 biblio-style: unsrt
 output: Rmdx::rmdx_paper

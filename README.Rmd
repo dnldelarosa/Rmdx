@@ -53,7 +53,7 @@ tryCatch(
 )
 remotes::install_github("drdsdaniel/Rmdx")
 ```
-
+ 
 ## Usage
 
 If you are using RStudio, you can create a new Rmdx document from file menu: `File -> New file -> R Markdown -> From Template`.

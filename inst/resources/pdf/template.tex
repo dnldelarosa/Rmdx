@@ -12,6 +12,16 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{graphicx}
+\usepackage{ifthen}
+
+
+\ifthenelse{\equal{$lang$}{\string spanish}}
+  {% True case
+   \newcommand{\ktitle}{Palabras clave}%
+  }
+  {% false case
+   \newcommand{\ktitle}{Keywords}%
+  }
 
 $if(lang)$
 \usepackage[$lang$]{babel}
@@ -95,6 +105,7 @@ $header-includes$
 $endfor$
 
 
+
 \begin{document}
 \maketitle
 
@@ -106,22 +117,13 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-$if(abstract_alt)$
-  \centerline
-  {\large \bfseries \scshape $aatitle$}
+$for(abstracts)$
+\centerline
+{\large \bfseries \scshape $abstracts.title$}
 \begin{abstract}
-  $abstract_alt$
+  $abstracts.text$
 \end{abstract}
-$endif$
-
-$if(abstract)$
-  \centerline
-  {\large \bfseries \scshape Abstract}
-\begin{abstract}
-  $abstract$
-\end{abstract}
-$endif$
-
+$endfor$
 
 $if(keywords)$
 \keywords{
